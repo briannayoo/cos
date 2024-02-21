@@ -1,27 +1,64 @@
 /* Main menu */
 
-#main_menu h1{
+nav{
+    margin-top: 20px;
+    background-color: transparent;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+}
+nav h1{
     font-size: 40px;
-  
+    order: 2;
+}
+nav ul{
+    display: flex;
+}
+#list{
+    order: 1;
+}
+#list:after{
+    content:'';
+    display: block;
+    clear: both;
+}
+body{
+    background: transparent;
+    overflow-y: scroll;
+}
+header{
+    margin-top: 20px;
+    height: 100px;
+    transition: height 0.5s;
+    overflow: hidden;
+}
+nav{
+    width: 1400px;
+    margin: 0 auto;
+}
+#list > li {
+    float:left; 
+    line-height:50px; 
+    margin-right:40px; 
+    position: relative;
+}
+#list > li ul{ 
+    width:100%; 
+    display: none; 
+    position: absolute;
+}
+#list > li ul li{
+    white-space:nowrap;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+nav > ul > li:hover .lnb{
+    display:block;
+}
+#icon{
+    order: 3;
+}
 
 
 
@@ -242,4 +279,4 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-} */ */ */
+} */ 
