@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ko">
+<body lang="ko">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,7 +13,7 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <header>
+  <header class="fixed">
     <nav>
       <h1>COS</h1>
       <ul id="list">
@@ -97,17 +97,16 @@
       </ul>
     </nav>
   </header>
-</body>
 <section class="slideshow">
-  <div class="banner">
-    <ul class="banner_bg">
-      <li>
+  <div class="slidewrapper">
+    <ul class="slidecontainer">
+      <li class="slide">
         <img src="images/bannerbg-2.jpg" alt="" class="bannerbg-2">
       </li>
-      <li>
+      <li class="slide">
         <video src="video/bannerbg-1.mp4"></video>
       </li>
-      <li>
+      <li class="slide">
         <img src="images/bannerbg-3.jpg" alt="" class="bannerbg-3">
       </li>
     </ul>
@@ -123,88 +122,45 @@
       </span>
   </button>
 </section>
-<section class="new_arrial"></section>
-<section class="cos_x"></section>
-<section class="cos_by_you"></section>
-<section class="explore"></section>
-<footer></footer>
-
-
-<!-- <body>
-<header>   
-  <div class="slide-wrapper">
-    <ul class="slide-container">
-        <li class="slide1">
-          <div class="slide1">
-              <img src="..//COS SITE/images/banner1.jpg" width="1920px" height="1080px">
-          </div>
-        </li>
-        <li class="slide2">
-          <video src="video/EN COS SS24 WW 20SEC 16X9 Youtube ENG V03 (1).mp4"></video>
-          <button>COS X LINDA FARROW</button>
-        </li>
-        <li class="slide3">
-          <div class="slide3">
-            <h1>Bags for women</h1>
-              <img src="배너이미지주소" width="가로길이px" height="세로길이px">
-            </a>
-              <button>쇼핑하기</button>
-          </div>
-        </li>
-        <li class="slide4">
-          <div>
-            <button>자세히 보기 </button>
-          </div>
-        </li>
-        <li class="slide5">
-          <div>
-            <button>자세히 보기 </button>
-          </div>
-        </li>
-        
-    </ul>
-    <a href="#" id="prev" class="controls"><i class="fas fa-chevron-left"></i></a>
-    <a href="#" id="next" class="controls"><i class="fas fa-chevron-right"></i></a>
-    <p class="pager">
-         -->
-            <!-- <a href="">0</a>
-            <a href="" class="active">1</a>
-            <a href="">2</a>
-            <a href="">3</a>
-            <a href="">4</a>  -->
-           
-    </p>
-  <div>
-    <button class="primary">자세히 보기</button>
-  </div>
-  <section>
-      <h1>NEW ARRIVAL</h1>
-      <hr>
-      <h2>COS 신상품 컬렉션을 통해 다가오는 시즌을 미리 준비해보세요.</h2>
-      <div>
-        <div>
-          <img src="" alt="">
-          <button class="secoundary">여자 신상품</button>
+<div class="container">
+  <section class="new_arrial">
+    <div class="title-area">
+      <h2 class="title">NEW ARRIVAL</h2>
+      <p class="desc">COS 신상품 컬렉션을 통해 다가오는 시즌을 미리 준비해보세요.</p>
+    </div>
+  <ul class="main_cate_list">
+    <li>
+      <a href="" class="link">
+        <div class="img_women">
+          <img src="images/cate_women.jpg" alt="여성신상품">
         </div>
-        <div>
-          <img src="" alt="">
-          <button class="secoundary">남자 신상품</button>
+        <div class="btn">여성 신상품</div>
+      </a>
+    </li>
+    <li>
+      <a href="" class="link">
+        <div class="img_men">
+          <img src="images/cate_men.jpg" alt="남성신상품">
+          <div class="btn">남성 신상품</div>
         </div>
-      </div>
+      </a>
+    </li>
+  </ul>
   </section>
-  <section>
-    <h1>COS X LINDA FARROW</h1>
-    <hr>
-    <h2>LAUNCHING 24.02.21</h2>
+  <section class="cos_x">
+    <div class="title-area">
+      <h2 class="title">COS X LINDA FARROW</h2>
+      <p class="desc">LAUNCHING 24.02.21</p>
+    </div>
     <div>
       <img src="" alt="">
     </div>
   </section>
-  <section>
-    <H1>COS BY YOU</H1>
-    <hr>
-    <h2>#cos</h2>
-    <div>
+  <section class="cos_by_you">
+    <div class="title-area">
+      <h2 class="title">COS BY YOU</h2>
+      <p class="desc">#cos</p>
+    </div>
       <div>
         <img src="" alt="">
       </div>
@@ -219,19 +175,20 @@
       </div>
     </div>
   </section>
-  <section>
-    <h1>THERE'S MORE TO EXPLORE</h1>
-    <hr>
-    <div>
+  <section class="explore">
+    <div class="title-area">
+      <h2 class="title">THERE'S MORE TO EXPLORE</h2>
+    </div>
       <div>
         <video src="./images/COS-LFM-16-9.mp4"></video>
         <p></p>
       </div>
     </div>
   </section>
-
+</div>
   
-</header>
-</body>
+<footer></footer>
+
 <script src="js/script.js"></script>
+</body>
 </html>

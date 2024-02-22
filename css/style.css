@@ -1,5 +1,7 @@
 /* Main menu */
-
+.fixed{
+    position: fixed;
+}
 nav{
     margin-top: 20px;
     background-color: transparent;
@@ -7,7 +9,7 @@ nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    list-style: none;
+    font-family: "Noto Sans KR", sans-serif;
 }
 nav h1{
     font-size: 40px;
@@ -18,10 +20,10 @@ nav h1{
 nav ul{
     display: flex;
 }
-#list{
+nav ul{
     order: 1;
 }
-#list:after{
+nav ul:after{
     content:'';
     display: block;
     clear: both;
@@ -41,22 +43,22 @@ nav{
     width: 1400px;
     margin: 0 auto;
 }
-#list > li {
+nav ul > li {
     float:left; 
     line-height:50px; 
     margin-right:40px; 
     position: relative;
 }
-#list > li ul{ 
+header nav ul li ul{ 
     width:100%; 
     display: none; 
     position: absolute;
 }
-#list > li ul li{
+header nav ul li ul li{
     white-space:nowrap;
 }
 
-nav > ul > li:hover .lnb{
+nav > ul > li:hover ul{
     display:block;
 }
 #icon{
@@ -65,11 +67,66 @@ nav > ul > li:hover .lnb{
 }
 
 /* banner */
-.banner_bg > li{
+*{ margin:0;
+    padding: 0;  
+  }
+  .slidewrapper{
+    position: relative;
+  }
+  .slidecontainer{
+    position: relative;
+    display: flex;
+  }
+  .slide {
     width: 1920px;
     height: 1080px;
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+   
+  }
+  .slide.active{
+    opacity: 1;
+    visibility: visible;
+  }
+  .slidewrapper button{
+    background: #000;
+    color: #fff;
+    padding: 5px 8px;
+    position: absolute;
+    top: 50%;
+    transform:translateY(-50%);
+    font-size: 2em;
+  }
+  .slidewrapper .prev{
+    left: 50px;
+  }
+  .slidewrapper .next{
+    right: 50px;
+  }
+/* main cate 1 */
+.main_cate_list{
+    display: flex;
+    gap: 26px;
 }
+.main_cate_list li{
+    position: relative;
+}
+.main_cate_list .btn{
+    position: absolute;  
+    right: 0;
+    bottom: 0;  
+    color: #000;
+    display: block;
+    width: 100px;
+    height: 50px;
+    background: #fff;
+    border-radius: 10px;
+    line-height: 50px;
+   
+}
+
 
 
 
